@@ -3,7 +3,7 @@ os.system('cls')
 
 from diccionario import *
 
-primosRango = [2, 3] #, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+primosRango = [2, 3]
 
 def opcionMultiple(text, opciones = ['s', 'n'], siError ='Solo "s" y "n" son opciones válidas') :
   while True:
@@ -56,8 +56,6 @@ def crearPrimos(idioma):
       primosRango.append(I)
 #
 def esprimo(I, primos = [2,3]):
-  # if 2 in primos:
-  #   primos.remove(2)
 
   # Verifica que el número no pretenezca a una lista de primos
   if max(primos) >= I:
@@ -87,6 +85,13 @@ def esprimo(I, primos = [2,3]):
     divisor += 2
 
 #
+#         CONTINUAR POR ACÁ
+# print(textos['Esp']['elegir'])
+# print(textos['Eng']['elegir'])
+# lan = opcionMultiple('->\033[32m ',opcionesValidas['elegir'],opcionesValidas['error'])
 
-crearPrimos('Esp')
-print(primosRango)
+# crearPrimos(lan)
+# print(primosRango)
+
+
+# # opcionMultiple('->\033[32m ',opcionesValidas['elegir'],opcionesValidas['error'])
